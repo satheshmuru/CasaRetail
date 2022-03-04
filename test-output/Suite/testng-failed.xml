@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Testone(failed)">
+  <test thread-count="5" name="Testtwo(failed)">
     <classes>
       <class name="TestComponent.UITest">
         <methods>
-          <include name="Scenarioone"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
+          <include name="Scenariotwo">
+            <parameter name="testcasename" value="Verify Filtering and Sorting"/>
+          </include> <!-- Scenariotwo -->
           <include name="Initialset"/>
         </methods>
       </class> <!-- TestComponent.UITest -->
     </classes>
-  </test> <!-- Testone(failed) -->
+  </test> <!-- Testtwo(failed) -->
 </suite> <!-- Failed suite [Suite] -->

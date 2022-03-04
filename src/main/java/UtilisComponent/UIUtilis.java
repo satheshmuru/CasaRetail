@@ -182,7 +182,7 @@ public class UIUtilis {
 	public static boolean waitfor(WebElement element, String Lable) {
 		boolean flag = false;
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 10);
+			WebDriverWait wait = new WebDriverWait(driver, 25);
 			wait.until(ExpectedConditions.visibilityOf(element));
 			test.log(Status.PASS, Lable + " is Visible and Stable");
 			flag = true;
@@ -190,6 +190,20 @@ public class UIUtilis {
 
 			System.out.println("Error in waitfor : " + e.getMessage());
 			test.log(Status.FAIL, "Error in Waitfor : " + e.getMessage());
+
+		}
+		return flag;
+	}
+	
+	public static boolean elementnotpresent(WebElement element, String Lable) {
+		boolean flag = true;
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 5);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			test.log(Status.FAIL, Lable + " is not displayed");
+			flag = false;
+		} catch (Exception e) {
+			test.log(Status.PASS, Lable + " is displayed");
 
 		}
 		return flag;

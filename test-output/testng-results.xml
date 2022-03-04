@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-03T21:03:15 IST" name="Suite" finished-at="2022-03-03T21:04:07 IST" duration-ms="51804">
+  <suite started-at="2022-03-04T13:52:45 IST" name="Suite" finished-at="2022-03-04T13:54:26 IST" duration-ms="101338">
     <groups>
     </groups>
-    <test started-at="2022-03-03T21:03:15 IST" name="Testone" finished-at="2022-03-03T21:04:07 IST" duration-ms="51804">
+    <test started-at="2022-03-04T13:52:45 IST" name="Testone" finished-at="2022-03-04T13:53:43 IST" duration-ms="57882">
       <class name="TestComponent.UITest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestComponent.UITest@4135c3b]" started-at="2022-03-03T21:03:15 IST" name="beforeSuite" finished-at="2022-03-03T21:03:15 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="Initialset(org.testng.ITestContext)[pri:0, instance:TestComponent.UITest@4135c3b]" started-at="2022-03-03T21:03:16 IST" name="Initialset" finished-at="2022-03-03T21:03:27 IST" duration-ms="11936" status="PASS">
+        <test-method is-config="true" signature="Initialset(java.lang.String)[pri:0, instance:TestComponent.UITest@28eaa59a]" started-at="2022-03-04T13:52:45 IST" name="Initialset" finished-at="2022-03-04T13:52:57 IST" duration-ms="12022" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@27e7c77f]]>
+                <![CDATA[Verify Creation of orders]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialset -->
-        <test-method signature="Scenarioone()[pri:0, instance:TestComponent.UITest@4135c3b]" started-at="2022-03-03T21:03:27 IST" name="Scenarioone" finished-at="2022-03-03T21:04:02 IST" duration-ms="34958" status="PASS">
+        <test-method signature="Scenarioone()[pri:0, instance:TestComponent.UITest@28eaa59a]" started-at="2022-03-04T13:52:57 IST" name="Scenarioone" finished-at="2022-03-04T13:53:38 IST" duration-ms="40962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenarioone -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestComponent.UITest@4135c3b]" started-at="2022-03-03T21:04:02 IST" name="afterMethod" finished-at="2022-03-03T21:04:07 IST" duration-ms="4860" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestComponent.UITest@28eaa59a]" started-at="2022-03-04T13:53:38 IST" name="afterMethod" finished-at="2022-03-04T13:53:43 IST" duration-ms="4845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:TestComponent.UITest@4135c3b]" started-at="2022-03-03T21:04:07 IST" name="afterSuite" finished-at="2022-03-03T21:04:07 IST" duration-ms="32" status="PASS">
+      </class> <!-- TestComponent.UITest -->
+    </test> <!-- Testone -->
+    <test started-at="2022-03-04T13:53:43 IST" name="Testtwo" finished-at="2022-03-04T13:54:26 IST" duration-ms="43406">
+      <class name="TestComponent.UITest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestComponent.UITest@3ce1e309]" started-at="2022-03-04T13:52:44 IST" name="beforeSuite" finished-at="2022-03-04T13:52:45 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="Initialset(java.lang.String)[pri:0, instance:TestComponent.UITest@3ce1e309]" started-at="2022-03-04T13:53:43 IST" name="Initialset" finished-at="2022-03-04T13:53:55 IST" duration-ms="11893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verify Filtering and Sorting]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialset -->
+        <test-method signature="Scenariotwo()[pri:0, instance:TestComponent.UITest@3ce1e309]" started-at="2022-03-04T13:53:55 IST" name="Scenariotwo" finished-at="2022-03-04T13:54:26 IST" duration-ms="31123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenariotwo -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestComponent.UITest@3ce1e309]" started-at="2022-03-04T13:54:26 IST" name="afterMethod" finished-at="2022-03-04T13:54:26 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:TestComponent.UITest@3ce1e309]" started-at="2022-03-04T13:54:26 IST" name="afterSuite" finished-at="2022-03-04T13:54:26 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- TestComponent.UITest -->
-    </test> <!-- Testone -->
+    </test> <!-- Testtwo -->
   </suite> <!-- Suite -->
 </testng-results>

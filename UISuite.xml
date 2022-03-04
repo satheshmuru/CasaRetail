@@ -6,9 +6,23 @@
       <class name="TestComponent.UITest">
 				<methods>
 					<include name="Scenarioone">
+					<parameter name="testcasename"
+							value="Verify Creation of orders" />
 					</include>
 				</methods>
 			</class>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+   <test thread-count="5" name="Testtwo">
+    <classes>
+      <class name="TestComponent.UITest">
+				<methods>
+					<include name="Scenariotwo">
+					<parameter name="testcasename"
+							value="Verify Filtering and Sorting" />
+					</include>
+				</methods>
+			</class>
+    </classes>
+  </test>
 </suite> <!-- Suite -->
